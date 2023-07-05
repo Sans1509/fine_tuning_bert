@@ -18,6 +18,6 @@ class Fine_Tuning:
         @return: accuracy
         """
         processed_dataframe = pre_processing()
-        # model_training = training_model(processed_dataframe)
-        # accuracy = model_validation(model_training)
-        # return accuracy
+        model_training = training_model(processed_dataframe)
+        accuracy = model_validation(model_training)
+        return accuracy
